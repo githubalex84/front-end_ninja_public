@@ -154,8 +154,6 @@ a:focus {color: #2d3c49; outline: 0;}
 .flexRow {
   display: flex;
   flex-direction: row;
-  
-  flex-wrap: wrap;
   flex-basis: calc(980px * 999 - 100% * 999);
 }
 
@@ -178,9 +176,9 @@ header {
 }
 .flexItem {
   padding: 5px;
-  width: 33%;
   margin-top: 10px;
   justify-content: center;
+  width: 100%;
   /*
   line-height: 150px;
   color: white;
@@ -190,8 +188,8 @@ header {
   */
 }
 @media screen and (max-width: 480px) {
-	.flexItem {
-		width: 100%;
+	.flexRow {
+		flex-direction: column;
 	}
 }
 
